@@ -1,0 +1,164 @@
+body.light {
+  background-color: rgba(57, 152, 99, 0.7);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #399863;
+}
+
+.main-btn {
+  color: #399863;
+}
+.main-btn:hover {
+  color: #399863;
+}
+
+.main-title h3 {
+  color: #399863;
+}
+
+.preloader .preloader-item .move {
+  background-color: #399863;
+}
+
+.switch-button {
+  color: transparent;
+  -webkit-text-stroke: 1px #399863;
+}
+
+.vertical-nav .logo {
+  color: transparent;
+  -webkit-text-stroke: 1px #399863;
+}
+.vertical-nav .toggle-menu .bar {
+  background-color: #399863;
+}
+@media (max-width: 575.98px) {
+  .vertical-nav .mini-menu ul li a:hover, .vertical-nav .mini-menu ul li a.active {
+    border: 1px dotted #399863;
+  }
+}
+.vertical-nav .mini-menu ul li a i:before {
+  color: #399863;
+}
+.vertical-nav .mini-menu ul li a span {
+  color: #399863;
+}
+
+.home .home-intro p span {
+  color: #399863;
+}
+
+.about .about-me .about-info h3:before {
+  background-color: #399863;
+}
+.about .about-me .about-info .personal-info .about-item h4 span {
+  color: #399863;
+}
+.about .about-me .about-info .personal-info .about-item h4 span:after {
+  border-left: 1px dotted #399863;
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .services .service.three {
+    border: 1px dotted #399863;
+  }
+}
+.services .service.two, .services .service.four {
+  border: 1px dotted #399863;
+}
+.services .service .service-icon i:before {
+  color: #399863;
+}
+
+.skills .skills-content h3 i {
+  color: #399863;
+}
+.skills .progress-container .progress .progress-bar {
+  background-color: #399863;
+}
+
+.resume .resume-content .education i,
+.resume .resume-content .experience i {
+  color: #399863;
+}
+.resume .resume-content .education .resume-item:not(:last-of-type):before,
+.resume .resume-content .experience .resume-item:not(:last-of-type):before {
+  border-bottom: 1px dotted #399863;
+}
+.resume .resume-content .education .resume-item .resume-date,
+.resume .resume-content .experience .resume-item .resume-date {
+  color: #399863;
+}
+
+.blog .post .post-content .post-date {
+  color: #399863;
+}
+.blog .post .post-content .post-title h4:hover {
+  color: #399863;
+}
+
+.contact .contact-boxes .contact-box p > i {
+  color: #399863;
+}
+.contact .contact-boxes .contact-box p > i:not(.available):after {
+  border-left: 1px dotted #399863;
+}
+.contact .contact-form .form-group .form-control:focus ~ label {
+  color: #399863;
+}
+.contact .contact-form .form-group .input-border {
+  background-color: #399863;
+}
+.contact .copyright a, .contact .copyright i {
+  color: #399863;
+}
+
+.demo-rtl .about .about-me .about-info .personal-info .about-item h4 span:after {
+  border-left: none;
+  border-right: 1px dotted #399863;
+}
+.demo-rtl .contact .contact-boxes .contact-box p > i:not(.available):after {
+  border-left: none;
+  border-right: 1px dotted #399863;
+}
+
+.page-title .overlay .content ul li a {
+  color: #399863;
+}
+
+.blog .post .post-content .more-details blockquote i {
+  color: #399863;
+}
+.blog .post .post-content .post-footer .post-tags ul li a:hover {
+  color: #399863;
+}
+.blog .post .post-content .post-comments .post-comment .reply-btn {
+  color: #399863;
+}
+.blog .post .post-content .post-form .form-control:focus {
+  border: 1px solid #399863;
+}
+.blog .blog-sidebar .sidebar-search .form-control:focus {
+  border: 1px solid #399863;
+}
+.blog .blog-sidebar .sidebar-search .search-btn {
+  color: #399863;
+}
+.blog .blog-sidebar .categories-list li a:hover {
+  color: #399863;
+}
+.blog .blog-sidebar .categories-list li a span {
+  color: #399863;
+}
+.blog .blog-sidebar .sidebar-posts .post-info h5 a:hover {
+  color: #399863;
+}
+.blog .blog-sidebar .archives-list li a:hover {
+  color: #399863;
+}
+.blog .blog-sidebar .tags-list li a:hover {
+  color: #399863;
+}
+
+/*# sourceMappingURL=green_color.css.map */

@@ -1,0 +1,164 @@
+body.light {
+  background-color: rgba(33, 129, 214, 0.7);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2181d6;
+}
+
+.main-btn {
+  color: #2181d6;
+}
+.main-btn:hover {
+  color: #2181d6;
+}
+
+.main-title h3 {
+  color: #2181d6;
+}
+
+.preloader .preloader-item .move {
+  background-color: #2181d6;
+}
+
+.switch-button {
+  color: transparent;
+  -webkit-text-stroke: 1px #2181d6;
+}
+
+.vertical-nav .logo {
+  color: transparent;
+  -webkit-text-stroke: 1px #2181d6;
+}
+.vertical-nav .toggle-menu .bar {
+  background-color: #2181d6;
+}
+@media (max-width: 575.98px) {
+  .vertical-nav .mini-menu ul li a:hover, .vertical-nav .mini-menu ul li a.active {
+    border: 1px dotted #2181d6;
+  }
+}
+.vertical-nav .mini-menu ul li a i:before {
+  color: #2181d6;
+}
+.vertical-nav .mini-menu ul li a span {
+  color: #2181d6;
+}
+
+.home .home-intro p span {
+  color: #2181d6;
+}
+
+.about .about-me .about-info h3:before {
+  background-color: #2181d6;
+}
+.about .about-me .about-info .personal-info .about-item h4 span {
+  color: #2181d6;
+}
+.about .about-me .about-info .personal-info .about-item h4 span:after {
+  border-left: 1px dotted #2181d6;
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .services .service.three {
+    border: 1px dotted #2181d6;
+  }
+}
+.services .service.two, .services .service.four {
+  border: 1px dotted #2181d6;
+}
+.services .service .service-icon i:before {
+  color: #2181d6;
+}
+
+.skills .skills-content h3 i {
+  color: #2181d6;
+}
+.skills .progress-container .progress .progress-bar {
+  background-color: #2181d6;
+}
+
+.resume .resume-content .education i,
+.resume .resume-content .experience i {
+  color: #2181d6;
+}
+.resume .resume-content .education .resume-item:not(:last-of-type):before,
+.resume .resume-content .experience .resume-item:not(:last-of-type):before {
+  border-bottom: 1px dotted #2181d6;
+}
+.resume .resume-content .education .resume-item .resume-date,
+.resume .resume-content .experience .resume-item .resume-date {
+  color: #2181d6;
+}
+
+.blog .post .post-content .post-date {
+  color: #2181d6;
+}
+.blog .post .post-content .post-title h4:hover {
+  color: #2181d6;
+}
+
+.contact .contact-boxes .contact-box p > i {
+  color: #2181d6;
+}
+.contact .contact-boxes .contact-box p > i:not(.available):after {
+  border-left: 1px dotted #2181d6;
+}
+.contact .contact-form .form-group .form-control:focus ~ label {
+  color: #2181d6;
+}
+.contact .contact-form .form-group .input-border {
+  background-color: #2181d6;
+}
+.contact .copyright a, .contact .copyright i {
+  color: #2181d6;
+}
+
+.demo-rtl .about .about-me .about-info .personal-info .about-item h4 span:after {
+  border-left: none;
+  border-right: 1px dotted #2181d6;
+}
+.demo-rtl .contact .contact-boxes .contact-box p > i:not(.available):after {
+  border-left: none;
+  border-right: 1px dotted #2181d6;
+}
+
+.page-title .overlay .content ul li a {
+  color: #2181d6;
+}
+
+.blog .post .post-content .more-details blockquote i {
+  color: #2181d6;
+}
+.blog .post .post-content .post-footer .post-tags ul li a:hover {
+  color: #2181d6;
+}
+.blog .post .post-content .post-comments .post-comment .reply-btn {
+  color: #2181d6;
+}
+.blog .post .post-content .post-form .form-control:focus {
+  border: 1px solid #2181d6;
+}
+.blog .blog-sidebar .sidebar-search .form-control:focus {
+  border: 1px solid #2181d6;
+}
+.blog .blog-sidebar .sidebar-search .search-btn {
+  color: #2181d6;
+}
+.blog .blog-sidebar .categories-list li a:hover {
+  color: #2181d6;
+}
+.blog .blog-sidebar .categories-list li a span {
+  color: #2181d6;
+}
+.blog .blog-sidebar .sidebar-posts .post-info h5 a:hover {
+  color: #2181d6;
+}
+.blog .blog-sidebar .archives-list li a:hover {
+  color: #2181d6;
+}
+.blog .blog-sidebar .tags-list li a:hover {
+  color: #2181d6;
+}
+
+/*# sourceMappingURL=blue_color.css.map */

@@ -1,0 +1,166 @@
+/* --------------------------------------
+   1. Global Styles
+-----------------------------------------*/
+
+* {
+    @include transition(all .4s ease-in-out);
+}
+
+*, *:after, *:before {
+    @include prefixer(box-sizing, border-box);
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #000;
+	overflow: hidden;
+	&.demo2 {
+		@media #{$extraLarge} {
+		    padding: 30px 60px;
+        }
+	    @media #{$large} {
+		    padding: 30px;
+        }
+		section {
+			@include prefixer(transform, scale(0));
+	        transform-origin: 0 0;
+	        @include transition(transform .82s ease .82s, opacity 0s ease .82s);
+	        &.active {
+	            @include prefixer(transform, scale(1));
+	            @include transition(transform .82s ease);
+            }
+		    @media #{$extraLarge} {
+		        height: calc(100vh - 60px);
+            }
+	        @media #{$large} {
+		        height: calc(100vh - 60px);
+            }
+        }
+		.area-bg {
+		    @media #{$extraLarge} {
+		        height: calc(100vh - 60px);
+            }
+	        @media #{$large} {
+		        height: calc(100vh - 60px);
+            }
+        }
+    }
+	&.demo2.demo-rtl {
+		section {
+	        transform-origin: top right;
+        }
+    }
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+a,
+a:hover,
+a:focus,
+a:active {
+    color: #fff;
+    text-decoration: none;
+}
+
+/*=========== Typography ============*/
+h1 {
+    font-size: 60px;
+    font-weight: 800;
+}
+
+h2 {
+    font-size: 50px;
+    font-weight: 600;
+}
+
+h3 {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+h4 {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+h5 {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+h6 {
+    font-size: 15px;
+    font-weight: 400;
+}
+
+/*=========== My Classes ============*/
+
+.no-padding {
+    padding: 0;
+}
+
+.page-content {
+    position: relative;
+	height: 100vh;
+	padding-left: 80px;
+	@media #{$extraSmall} {
+		padding-left: 0;
+    }
+}
+
+section {
+	position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+	z-index: 0;
+	@include prefixer(transform, scaleY(0));
+	transform-origin: center;
+    opacity: 0;
+	@include transition(transform .6s ease .6s, opacity 0s ease .6s);
+	&.active {
+	    @include prefixer(transform, scaleY(1));
+        opacity: 1;
+        z-index: 1;
+	    @include transition(transform .6s ease);
+    }
+}
+
+.area-bg {
+	background-color: $bgDark; 
+    height: 100vh;
+	@media #{$extraSmall} {
+		margin-top: 70px;
+		height: calc(100vh - 70px);
+    }
+}
+
+::-webkit-scrollbar {
+    width: 4px;
+	height: 15px;
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+	background: $mainColor;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active  {
+    -webkit-box-shadow: 0 0 0 30px $bgDark inset !important;
+}
+
+input:-webkit-autofill {
+    -webkit-text-fill-color: #fff !important;
+}

@@ -1,0 +1,360 @@
+@import 'helpers/variables';
+
+body.light {
+    background-color: rgba($goldColor, .7);
+}
+
+::-webkit-scrollbar-thumb {
+	background: $goldColor;
+}
+
+.main-btn {
+    color: $goldColor;
+	&:hover {
+		color: $goldColor;
+    }
+}
+
+.main-title {
+	h3 {
+        color: $goldColor;
+    }
+}
+
+.preloader {
+	.preloader-item {
+		.move {
+			background-color: $goldColor;
+        }
+    }
+}
+
+.switch-button {
+    color: transparent;
+    -webkit-text-stroke: 1px $goldColor;
+}
+
+.vertical-nav {
+	.logo {
+        color: transparent;
+        -webkit-text-stroke: 1px $goldColor;
+    }
+	.toggle-menu {
+		.bar {
+			background-color: $goldColor;
+		}
+	}
+	
+	.mini-menu {
+		ul {
+			li {
+				a {
+					&:hover,
+					&.active {
+						@media #{$extraSmall} {
+							border: 1px dotted $goldColor;
+                        }
+                    }
+					i:before {
+						color: $goldColor;
+					}
+					span {
+						color: $goldColor;
+					}
+				}
+			}
+        }
+	}
+}
+
+.home {
+	.home-intro {
+		p {
+			span {
+				color: $goldColor;
+			}
+		}
+	}
+}
+
+.about {
+	.about-me {
+		.about-info {
+			h3 {
+				&:before {
+					background-color: $goldColor;
+				}
+			}
+			.personal-info {
+				.about-item {
+					h4 {
+						span {
+							color: $goldColor;
+    						&:after {
+								border-left: 1px dotted $goldColor;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+.services {
+    .service {
+		@media #{$medium} {
+			&.three {
+			    border: 1px dotted $goldColor;
+		    }
+        }
+		&.two,
+		&.four {
+			border: 1px dotted $goldColor;
+		}
+		.service-icon {
+			i {
+				&:before {
+					color: $goldColor;
+				}
+		    }
+		}
+	}
+}
+
+.skills {
+    .skills-content {
+		h3 {
+			i {
+				color: $goldColor;
+			}
+		}
+	}
+	.progress-container {
+		.progress {
+			.progress-bar {
+				background-color: $goldColor;
+			}
+
+		}
+	}
+}
+
+.resume {
+	.resume-content {
+		.education,
+		.experience {
+			i {
+				color: $goldColor;
+			}
+			.resume-item {
+				&:not(:last-of-type) {
+					&:before {
+						border-bottom: 1px dotted $goldColor;
+				    }
+			    }
+				.resume-date {
+					color: $goldColor;
+				}
+			}
+		}
+	}
+}
+
+.blog {
+	.post {
+        .post-content {
+			.post-date {
+				color: $goldColor;
+			}
+		    .post-title {
+				h4 {
+					&:hover { 
+				        color: $goldColor;
+			        }
+				}
+			}
+		}
+	}
+}
+
+.contact {
+	.contact-boxes {
+		.contact-box {
+            p {
+				& > i {
+					color: $goldColor;
+					&:not(.available):after {
+						border-left: 1px dotted $goldColor;
+				    }
+				}
+			}
+		}
+	}
+	.contact-form {
+		.form-group {
+			.form-control {
+				&:focus ~ label {
+					color: $goldColor;
+				}
+			}
+			.input-border {
+				background-color: $goldColor;
+			}
+
+		}
+	}
+	.copyright {
+		a, i {
+            color: $goldColor;
+        }
+	}
+}
+
+%btn-style {
+	color: $goldColor;
+}
+
+.demo-rtl {
+	.about {
+	    .about-me {
+		    .about-info {
+			    .personal-info {
+				    .about-item {
+					    h4 {
+						    span {
+    						    &:after {
+								    border-left: none;
+								    border-right: 1px dotted $goldColor;
+							    }
+						    }
+					    }
+				    }
+			    }
+		    }
+	    }
+    }
+	.contact {
+	    .contact-boxes {
+		    .contact-box {
+                p {
+				    & > i {
+					    &:not(.available):after {
+						    border-left: none;
+						    border-right: 1px dotted $goldColor;
+				        }
+				    }
+			    }
+		    }
+	    }
+    }
+}
+
+.page-title {
+	.overlay {
+		.content {
+			ul {
+				li {
+					a {
+						color: $goldColor;
+					}
+
+				}
+			}
+		}
+	}
+}
+
+.blog  {
+	.post {
+        .post-content {
+			.more-details {
+				blockquote {
+					i {
+						color: $goldColor;
+					}
+				}
+            }
+            .post-footer {
+                .post-tags {
+					ul {
+                        li {
+							a {
+								&:hover {
+                                    color: $goldColor;
+                                }
+							}
+                        }
+                    }
+                }
+			}
+			.post-comments {
+				.post-comment {
+					.reply-btn {
+						color: $goldColor;
+					}
+				}
+			}
+			.post-form {
+				.form-control {
+					&:focus {
+	                    border: 1px solid $goldColor;
+                    }
+				}
+			}
+        }
+    }
+	.blog-sidebar {
+		.sidebar-search {
+			.form-control {
+				&:focus {
+					border: 1px solid $goldColor;
+                }
+			}
+			.search-btn {
+				color: $goldColor;
+			}
+		}
+		.categories-list {
+			li {
+				a {
+					&:hover {
+						color: $goldColor;
+					}
+					span {
+						color: $goldColor;
+					}
+				}
+			}
+		}
+		.sidebar-posts {
+            .post-info {
+				h5 {
+			        a {
+						&:hover {
+					        color: $goldColor;
+				        }
+					}
+			    }
+			}
+		}
+		.archives-list {
+			 li {
+                a {
+					&:hover {
+						color: $goldColor;
+					}
+			     }
+			}
+		}
+        .tags-list {
+			li {
+				a {
+					&:hover {
+						color: $goldColor;
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,70 @@
+/* --------------------------------------
+   Global Style
+-----------------------------------------*/
+body {
+    background-color: $bgDark;
+	overflow: auto;
+}
+
+.page-title {
+	position: relative;
+	background: url('https://via.placeholder.com/1920x624') center top no-repeat;
+    text-align: center;
+    overflow: hidden;
+	.overlay {
+		height: 100%;
+		background-color: rgba(0, 0, 0, .78);
+		padding-top: 150px;
+		padding-bottom: 150px;
+		.content {
+			h2 {
+				color: #fff;
+				font-weight: 800;
+				letter-spacing: .7px;
+				font-size: 52px;
+				text-transform: uppercase;
+				margin-bottom: 35px;
+			}
+			ul {
+				li {
+					position: relative;
+					display: inline-block;
+					margin-right: 10px;
+					padding-right: 15px;
+					font-size: 17px;
+					text-transform: capitalize;
+					letter-spacing: .5px;
+					&:last-child {
+						color: #fff;
+						padding-right: 0;
+						margin-right: 0;
+					}
+                    &:first-child:after,
+                    &.two:after {
+						content: "\f101";
+						font-family: "FontAwesome";
+						position: absolute;
+						right: -5px;
+						top: 3px;
+						font-size: 14px;
+						font-weight: 800;
+						color: #fff;
+					}
+					a {
+						color: $mainColor;
+					}
+
+				}
+			}
+		}
+	}
+}
+
+.blog {
+	padding-top: 80px;
+    padding-bottom: 50px;
+}
+
+.blog .post .post-img img {
+    width: 100%;
+}

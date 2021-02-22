@@ -1,0 +1,48 @@
+/* --------------------------------------
+   2. Loading
+-----------------------------------------*/
+
+.preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: $bgDark;
+    z-index: 9999999;
+	&.hide {
+		@include prefixer(transform, scaleY(0));
+		@include transition(all .5s ease);
+    }
+	&.preloader2.hide {
+		@include prefixer(transform, scale(0));
+    } 
+	.preloader-item {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+		width: 25%;
+		height: 1px;
+		background-color: #3b3b3c;
+		@include prefixer(transform, translate(-50%, -50%));
+		overflow: hidden;
+		.move {
+			position: absolute;
+			top: 0;
+			left: -50%;
+			width: 30%;
+			height: 100%;
+			background-color: $mainColor;
+		    @include prefixer(animation, moving 1s infinite linear);
+        }
+    }
+}
+
+@include keyframeprefix(moving) {
+    0% {
+        left: -50%;
+    }
+	100% {
+        left: 150%;
+    }
+}

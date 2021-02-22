@@ -1,0 +1,881 @@
+/* --------------------------------------
+   5. Home
+-----------------------------------------*/
+
+.home {
+    overflow: hidden;
+    background: url('../../../images/comments/network.jpg') center center no-repeat;
+    background-size: cover;
+    .area-bg {
+        position: relative;
+        background: rgba(95, 95, 97, .5);
+    }
+    .home-intro {
+        margin-left: 5vw;
+        .home-info {
+            width: 100%;
+        }
+        h3 {
+            color: #e6e5e5;
+            font-size: 22px;
+            font-weight: 600;
+            text-transform: capitalize;
+            letter-spacing: 1px;
+            margin: 0;
+            @media #{$medium} {
+                font-size: 20px;
+            }
+            @media #{$small} {
+                font-size: 18px;
+            }
+        }
+        h1 {
+            color: transparent;
+            -webkit-text-stroke: 1px #fff;
+            font-size: 75px;
+            letter-spacing: 1px;
+            font-weight: 800;
+            margin: 30px 0;
+            text-transform: capitalize;
+            @media #{$medium} {
+                font-size: 70px;
+            }
+            @media #{$small} {
+                font-size: 55px;
+            }
+        }
+        p {
+            color: #e6e5e5;
+            font-size: 22px;
+            font-weight: 600;
+            text-transform: capitalize;
+            letter-spacing: 1px;
+            margin: 0;
+            margin-bottom: 50px;
+            @media #{$medium} {
+                font-size: 20px;
+            }
+            @media #{$small} {
+                font-size: 18px;
+            }
+            span {
+                color: $mainColor;
+            }
+        }
+    }
+}
+
+
+/* --------------------------------------
+   6. About Me
+-----------------------------------------*/
+
+.about {
+    overflow: hidden;
+    overflow-y: auto;
+    .about-me {
+        padding-top: 60px;
+        color: #fff;
+        .main-title {
+            text-align: $text-center;
+        }
+        .about-image {
+            padding: 7px;
+            background: linear-gradient(-50deg, rgba(170, 170, 170, .1) 45%, transparent 25%);
+            @include prefixer(box-shadow,
+            0 0 10px rgba(0, 0, 0, .1));
+            @media #{$small} {
+                margin-right: 50px;
+                margin-left: 50px;
+                margin-bottom: 40px;
+            }
+            @media #{$extraSmall} {
+                margin-right: 30px;
+                margin-left: 30px;
+            }
+            img {
+                opacity: .55;
+                &:hover {
+                    opacity: .65;
+                }
+            }
+        }
+        .about-info {
+            h3 {
+                position: relative;
+                color: #fff;
+                font-size: 22px;
+                font-weight: 500;
+                letter-spacing: .7px;
+                line-height: 1.6;
+                padding-bottom: 10px;
+                margin-bottom: 25px;
+                @media #{$extraSmall} {
+                    font-size: 18px;
+                }
+                &:before {
+                    content: '';
+                    position: absolute;
+                    top: 100%;
+                    left: 0;
+                    height: 2px;
+                    width: 91px;
+                    background-color: $mainColor;
+                }
+            }
+            &>p {
+                color: #dedddc;
+                font-size: 15px;
+                font-weight: 400;
+                line-height: 1.8;
+                margin-bottom: 25px;
+            }
+            .personal-info {
+                margin-bottom: 25px;
+                .about-item {
+                    line-height: 1;
+                    margin-bottom: 30px;
+                    h4 {
+                        position: relative;
+                        color: #fff;
+                        font-size: 15px;
+                        font-weight: 400;
+                        letter-spacing: .5px;
+                        text-transform: capitalize;
+                        padding-left: 50px;
+                        @media #{$extraSmall} {
+                            font-size: 14px;
+                        }
+                        span {
+                            position: absolute;
+                            top: -9px;
+                            left: 0;
+                            width: 35px;
+                            height: 35px;
+                            line-height: 35px;
+                            text-align: $text-center;
+                            border-radius: 50%;
+                            background: $bgDark;
+                            @include prefixer2(box-shadow,
+                            inset 3px 3px 3px #212225,
+                            inset -3px -3px 3px #3e3d3d);
+                            color: $mainColor;
+                            font-size: 14px;
+                            letter-spacing: 1px;
+                            &:after {
+                                content: '';
+                                position: absolute;
+                                top: 29px;
+                                left: 18px;
+                                width: 2px;
+                                height: 20px;
+                                border-left: 1px dotted $mainColor;
+                                z-index: -1;
+                            }
+                        }
+                    }
+                    &:last-of-type {
+                        h4 {
+                            span {
+                                &:after {
+                                    content: none;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/* --------------------------------------
+   7. Services
+-----------------------------------------*/
+
+.services {
+    padding-top: 60px;
+    .main-title {
+        margin-bottom: 95px;
+    }
+    .service {
+        position: relative;
+        padding: 45px 15px 30px;
+        border-radius: 4px;
+        margin-bottom: 30px;
+        border: 2px solid #353535;
+        border-right-color: #2e2e2f;
+        border-bottom-color: #2e2e2f;
+        @include prefixer2(box-shadow,
+        inset 4px 4px 4px #212225,
+        inset -3px -3px 3px #3e3d3d);
+        @media #{$medium} {
+            margin-bottom: 65px;
+            &.three {
+                border: 1px dotted $mainColor;
+            }
+            &.four {
+                border: 2px solid #353535 !important;
+            }
+        }
+        @media #{$small} {
+            margin-bottom: 65px;
+        }
+        &.two,
+        &.four {
+            border: 1px dotted $mainColor;
+        }
+        &:hover {
+            @include prefixer2(box-shadow,
+            inset 6px 6px 6px #212225,
+            inset -6px -6px 6px #3e3d3d);
+        }
+        .service-icon {
+            position: absolute;
+            top: -40px;
+            left: 20px;
+            width: 62px;
+            height: 62px;
+            line-height: 62px;
+            text-align: $text-center;
+            border-radius: 50%;
+            background: $bgDark;
+            @include prefixer2(box-shadow,
+            inset 3px 3px 3px #212225,
+            inset -3px -3px 3px #3e3d3d);
+            i {
+                &:before {
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 50%;
+                    font-size: 30px;
+                    color: $mainColor;
+                    opacity: .9;
+                    margin-left: 0;
+                    @include prefixer2(box-shadow,
+                    3px 3px 3px #212225,
+                    -3px -3px 3px #3e3d3d);
+                }
+            }
+        }
+        h4 {
+            display: inline-block;
+            color: #fff;
+            font-size: 18px;
+            letter-spacing: 1px;
+            margin-bottom: 10px;
+            font-weight: 600;
+            text-transform: capitalize;
+        }
+        p {
+            line-height: 1.8;
+            margin-bottom: 0;
+            font-size: 15px;
+            font-weight: 400;
+            color: #dedddc;
+        }
+    }
+}
+
+
+/* --------------------------------------
+   8. Skills
+-----------------------------------------*/
+
+.skills {
+    padding-top: 35px;
+    padding-bottom: 60px;
+    @media #{$medium} {
+        padding-top: 0;
+    }
+    @media #{$small} {
+        padding-top: 0;
+    }
+    .main-title {
+        margin-bottom: 55px;
+    }
+    .skills-content {
+        padding: 25px;
+        border-radius: 4px;
+        @include prefixer2(box-shadow,
+        inset 3px 3px 3px #212225,
+        inset -3px -3px 3px #3e3d3d);
+        .professional-skills {
+            @media #{$small} {
+                margin-top: 30px;
+            }
+        }
+        h3 {
+            color: #fff;
+            text-transform: capitalize;
+            margin-top: 10px;
+            margin-bottom: 25px;
+            text-align: $text-center;
+            font-size: 18px;
+            font-weight: 400;
+            i {
+                display: block;
+                color: $mainColor;
+                font-size: 20px;
+                margin: auto;
+                margin-bottom: 8px;
+                width: 55px;
+                height: 55px;
+                line-height: 55px;
+                text-align: $text-center;
+                border-radius: 50%;
+                @include prefixer2(box-shadow,
+                inset 3px 3px 3px #212225,
+                inset -3px -3px 3px #3e3d3d);
+            }
+        }
+    }
+    .progress-container {
+        position: relative;
+        margin-bottom: 20px;
+        .percent {
+            position: absolute;
+            top: 0;
+            right: 0;
+            color: #dedddc;
+            font-size: 14px;
+        }
+        .progress {
+            height: 5px;
+            background-color: #39393c;
+            border-radius: 0;
+            margin-bottom: 0;
+            .progress-bar {
+                background-color: $mainColor;
+                width: 0;
+                @include transition(all .4s ease);
+            }
+        }
+        h4 {
+            margin: 0 0 10px 0;
+            font-size: 15px;
+            color: #dedddc;
+            letter-spacing: 1px;
+            font-family: 'Open Sans', sans-serif;
+        }
+    }
+}
+
+
+/* --------------------------------------
+   9. Resume
+-----------------------------------------*/
+
+.resume {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    color: #fff;
+    overflow: hidden;
+    overflow-y: auto;
+    .main-title {
+        text-align: $text-center;
+        margin-bottom: 130px;
+    }
+    .resume-content {
+        .education {
+            @media #{$medium} {
+                margin-bottom: 65px;
+            }
+            @media #{$small} {
+                margin-bottom: 65px;
+            }
+        }
+        .education,
+        .experience {
+            position: relative;
+            padding: 65px 25px 35px;
+            @include prefixer2(box-shadow,
+            inset 3px 3px 3px #212225,
+            inset -3px -3px 3px #3e3d3d);
+            i {
+                position: absolute;
+                top: -28px;
+                left: 50%;
+                @include prefixer(transform,
+                translateX(-50%));
+                width: 62px;
+                height: 62px;
+                line-height: 62px;
+                text-align: $text-center;
+                border-radius: 50%;
+                display: block;
+                background: $bgDark;
+                color: $mainColor;
+                font-size: 23px;
+                @include prefixer2(box-shadow,
+                inset 3px 3px 3px #212225,
+                inset -3px -3px 3px #3e3d3d);
+                &:before {
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 50%;
+                    @include prefixer2(box-shadow,
+                    3px 3px 3px #212225,
+                    -3px -3px 3px #3e3d3d);
+                }
+            }
+            .resume-item {
+                position: relative;
+                &:not(:last-of-type) {
+                    padding-bottom: 25px;
+                    margin-bottom: 25px;
+                    &:before {
+                        content: '';
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+                        right: 40%;
+                        border-bottom: 1px dotted $mainColor;
+                        height: 1px;
+                    }
+                }
+                .resume-date {
+                    position: relative;
+                    display: inline-block;
+                    color: $mainColor;
+                    padding: 10px 0;
+                    font-size: 14px;
+                    font-weight: 600;
+                    letter-spacing: 1px;
+                    text-align: $text-center;
+                    border-radius: 24px;
+                }
+                span {
+                    display: inline-block;
+                    letter-spacing: 1px;
+                    color: #dedddc;
+                    margin: 10px;
+                    font-size: 15px;
+                }
+                h4 {
+                    font-size: 17px;
+                    font-weight: 400;
+                    text-transform: capitalize;
+                    color: #eceaea;
+                    @media #{$extraSmall} {
+                        font-size: 16px;
+                    }
+                }
+                p {
+                    color: #dedddc;
+                    font-size: 15px;
+                    font-weight: 400;
+                    line-height: 1.8;
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}
+
+
+/* --------------------------------------
+   10. Portfolio
+-----------------------------------------*/
+
+.portfolio {
+    padding-top: 60px;
+    padding-bottom: 30px;
+    color: #fff;
+    overflow: hidden;
+    overflow-y: auto;
+    .main-title {
+        text-align: $text-center;
+    }
+    .portfolio-content {
+        .item {
+            position: relative;
+            border-radius: 4px;
+            margin-bottom: 30px;
+            padding: 6px;
+            @include prefixer2(box-shadow,
+            inset 3px 3px 3px #212225,
+            inset -3px -3px 3px #3e3d3d);
+            &:before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                @include prefixer2(box-shadow,
+                3px 3px 3px #212225,
+                -3px -3px 3px #3e3d3d);
+            }
+            img {
+                border-radius: 4px;
+            }
+            .overlay {
+                position: absolute;
+                top: 20px;
+                bottom: 20px;
+                left: 20px;
+                right: 20px;
+                background-color: rgba($bgDark, .7);
+                @include prefixer(transform,
+                scaleY(0));
+                .item-title,
+                .item-category span {
+                    position: absolute;
+                    top: 28%;
+                    left: 50%;
+                    @include prefixer(transform,
+                    translateX(-50%));
+                    display: inline-block;
+                    color: #fff;
+                    margin: 0;
+                    font-size: 16px;
+                }
+                .icon-img {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    @include prefixer(transform,
+                    translate(-50%, -50%));
+                    color: #fff;
+                    font-size: 20px;
+                }
+                .item-category {
+                    span {
+                        top: 65%;
+                        font-size: 15px;
+                        font-weight: 600;
+                        text-transform: capitalize;
+                    }
+                }
+            }
+            &:hover {
+                .overlay {
+                    @include prefixer(transform,
+                    scaleY(1));
+                }
+            }
+        }
+    }
+}
+
+
+/* --------------------------------------
+   11. Blog
+-----------------------------------------*/
+
+.blog {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    overflow: hidden;
+    overflow-y: auto;
+    .main-title {
+        text-align: $text-center;
+    }
+    .post {
+        border-radius: 4px;
+        overflow: hidden;
+        margin-bottom: 30px;
+        .post-img {
+            overflow: hidden;
+            &:hover {
+                img {
+                    @include prefixer(transform,
+                    scale(1.1));
+                }
+            }
+        }
+        .post-content {
+            position: relative;
+            padding: 30px 20px;
+            border-radius: 4px;
+            @include prefixer2(box-shadow,
+            inset 3px 3px 3px #212225,
+            inset -3px -3px 3px #3e3d3d);
+            .post-date {
+                color: $mainColor;
+                letter-spacing: 1px;
+                position: absolute;
+                top: -33px;
+                right: 5px;
+                width: 62px;
+                height: 62px;
+                padding: 13px;
+                border-radius: 50%;
+                text-align: $text-center;
+                font-size: 15px;
+                font-weight: 600;
+                background: $bgDark;
+                @include prefixer2(box-shadow,
+                inset 3px 3px 3px #212225,
+                inset -3px -3px 3px #3e3d3d);
+                @media #{$smallMobile} {
+                    width: 60px;
+                    height: 60px;
+                    font-size: 14px;
+                }
+                span {
+                    display: block;
+                    line-height: 1;
+                }
+            }
+            .post-title {
+                h4 {
+                    color: #fff;
+                    font-size: 16px;
+                    font-weight: 600;
+                    line-height: 1.5;
+                    letter-spacing: .5px;
+                    margin: 0 0 5px;
+                    text-transform: uppercase;
+                    @media #{$smallMobile} {
+                        font-size: 14px;
+                    }
+                    &:hover {
+                        color: $mainColor;
+                    }
+                }
+            }
+            .post-text {
+                p {
+                    line-height: 1.8;
+                    font-weight: 400;
+                    color: #dedddc;
+                    font-size: 15px;
+                    margin-top: 10px;
+                    margin-bottom: 0;
+                    padding-top: 10px;
+                    border-top: 1px solid #333335;
+                }
+            }
+            .post-more {
+                margin-top: 15px;
+            }
+        }
+    }
+    .my-btn {
+        text-align: $text-center;
+        margin-top: 20px;
+    }
+}
+
+
+/* --------------------------------------
+   12. Contact
+-----------------------------------------*/
+
+.contact {
+    padding-top: 60px;
+    overflow: hidden;
+    overflow-y: auto;
+    .main-title {
+        text-align: $text-center;
+    }
+    .contact-boxes {
+        border-radius: 4px;
+        padding: 34px 20px;
+        @include prefixer2(box-shadow,
+        inset 3px 3px 3px #212225,
+        inset -3px -3px 3px #3e3d3d);
+        @media #{$medium} {
+            margin-bottom: 40px;
+        }
+        @media #{$small} {
+            margin-bottom: 40px;
+        }
+        .contact-box {
+            position: relative;
+            margin-bottom: 20px;
+            &:last-of-type {
+                margin-bottom: 0;
+            }
+            p {
+                font-size: 14px;
+                line-height: 20px;
+                letter-spacing: .5px;
+                font-weight: 600;
+                color: #dedddc;
+                margin-bottom: 0;
+                &>i {
+                    position: relative;
+                    width: 40px;
+                    height: 40px;
+                    line-height: 40px;
+                    border-radius: 50%;
+                    text-align: $text-center;
+                    font-size: 17px;
+                    background-color: $bgDark;
+                    color: $mainColor;
+                    margin-right: 8px;
+                    @include prefixer2(box-shadow,
+                    inset 3px 3px 3px #212225,
+                    inset -3px -3px 3px #3e3d3d);
+                    &:not(.available):after {
+                        content: '';
+                        position: absolute;
+                        top: 37px;
+                        left: 21px;
+                        width: 1px;
+                        height: 48px;
+                        border-left: 1px dotted $mainColor;
+                        z-index: -1;
+                    }
+                }
+                span {
+                    display: inline-block;
+                    margin-right: 5px;
+                    margin-bottom: 5px;
+                    a {
+                        i {
+                            position: relative;
+                            display: inline-block;
+                            width: 40px;
+                            height: 40px;
+                            line-height: 40px;
+                            text-align: $text-center;
+                            border-radius: 50%;
+                            font-size: 16px;
+                            @include prefixer2(box-shadow,
+                            inset 3px 3px 3px #212225,
+                            inset -3px -3px 3px #3e3d3d);
+                            &:hover:after {
+                                content: '';
+                                position: absolute;
+                                top: 0;
+                                left: 0;
+                                width: 100%;
+                                height: 100%;
+                                border-radius: 50%;
+                                @include prefixer2(box-shadow,
+                                2px 2px 2px #212225,
+                                -2px -2px 2px #3e3d3d);
+                                @include transition(all .4s ease);
+                            }
+                        }
+                        .fa-facebook {
+                            color: #3b5998;
+                        }
+                        .fa-twitter {
+                            color: #1da1f2;
+                        }
+                        .fa-google-plus {
+                            color: #db4437;
+                        }
+                        .fa-behance {
+                            color: #0057ff;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .contact-form {
+        position: relative;
+        .form-group {
+            position: relative;
+            margin-bottom: 40px;
+            .form-control {
+                background-color: $bgDark;
+                color: #fff;
+                border: 0;
+                border-bottom: 1px solid #3a3939;
+                outline: none;
+                box-shadow: none;
+                border-radius: 0;
+                height: 46px;
+                padding: 12px;
+                &:focus~label {
+                    @extend %contact-label;
+                    color: $mainColor;
+                }
+                &:focus~.input-border {
+                    @include prefixer(transform,
+                    scale(1));
+                }
+            }
+            textarea.form-control {
+                height: 120px;
+                resize: none;
+                padding-top: 18px;
+            }
+            label {
+                position: absolute;
+                top: 13px;
+                left: 12px;
+                width: 100%;
+                margin-bottom: 0;
+                font-weight: 400;
+                cursor: text;
+                color: #c2c0c3;
+            }
+            input:not([value=""])~label,
+            textarea:not([data-value=""])~label {
+                @extend %contact-label;
+            }
+            .input-border {
+                content: "";
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                height: 1px;
+                background-color: $mainColor;
+                @include prefixer(transform,
+                scale(0));
+            }
+        }
+        .contact-btn {
+            &:focus {
+                @include prefixer2(box-shadow,
+                inset 6px 6px 6px #212225,
+                inset -4px -4px 4px #3e3d3d);
+            }
+        }
+        .form-message {
+            position: absolute;
+            left: 0;
+            bottom: -55px;
+            width: 100%;
+            color: #fff;
+            border-radius: 5px;
+            font-size: 15px;
+            padding: 12px;
+            text-transform: uppercase;
+            &.success {
+                background-color: #37983b;
+            }
+            &.error {
+                background-color: #f54033;
+            }
+        }
+    }
+    .copyright {
+        color: #c5c5c5;
+        font-size: 15px;
+        letter-spacing: 1.3px;
+        text-align: $text-center;
+        border-top: 1px solid #3a3939;
+        margin-top: 60px;
+        padding: 25px 0;
+        a,
+        i {
+            color: $mainColor;
+        }
+    }
+}
+
+%contact-label {
+    top: -16px;
+    left: 0;
+    font-size: 13px;
+    letter-spacing: .5px;
+}
+
+%btn-style {
+    outline: none;
+    cursor: pointer;
+    color: $mainColor;
+}

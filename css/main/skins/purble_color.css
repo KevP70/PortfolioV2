@@ -1,0 +1,164 @@
+body.light {
+  background-color: rgba(90, 99, 204, 0.7);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #5a63cc;
+}
+
+.main-btn {
+  color: #5a63cc;
+}
+.main-btn:hover {
+  color: #5a63cc;
+}
+
+.main-title h3 {
+  color: #5a63cc;
+}
+
+.preloader .preloader-item .move {
+  background-color: #5a63cc;
+}
+
+.switch-button {
+  color: transparent;
+  -webkit-text-stroke: 1px #5a63cc;
+}
+
+.vertical-nav .logo {
+  color: transparent;
+  -webkit-text-stroke: 1px #5a63cc;
+}
+.vertical-nav .toggle-menu .bar {
+  background-color: #5a63cc;
+}
+@media (max-width: 575.98px) {
+  .vertical-nav .mini-menu ul li a:hover, .vertical-nav .mini-menu ul li a.active {
+    border: 1px dotted #5a63cc;
+  }
+}
+.vertical-nav .mini-menu ul li a i:before {
+  color: #5a63cc;
+}
+.vertical-nav .mini-menu ul li a span {
+  color: #5a63cc;
+}
+
+.home .home-intro p span {
+  color: #5a63cc;
+}
+
+.about .about-me .about-info h3:before {
+  background-color: #5a63cc;
+}
+.about .about-me .about-info .personal-info .about-item h4 span {
+  color: #5a63cc;
+}
+.about .about-me .about-info .personal-info .about-item h4 span:after {
+  border-left: 1px dotted #5a63cc;
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .services .service.three {
+    border: 1px dotted #5a63cc;
+  }
+}
+.services .service.two, .services .service.four {
+  border: 1px dotted #5a63cc;
+}
+.services .service .service-icon i:before {
+  color: #5a63cc;
+}
+
+.skills .skills-content h3 i {
+  color: #5a63cc;
+}
+.skills .progress-container .progress .progress-bar {
+  background-color: #5a63cc;
+}
+
+.resume .resume-content .education i,
+.resume .resume-content .experience i {
+  color: #5a63cc;
+}
+.resume .resume-content .education .resume-item:not(:last-of-type):before,
+.resume .resume-content .experience .resume-item:not(:last-of-type):before {
+  border-bottom: 1px dotted #5a63cc;
+}
+.resume .resume-content .education .resume-item .resume-date,
+.resume .resume-content .experience .resume-item .resume-date {
+  color: #5a63cc;
+}
+
+.blog .post .post-content .post-date {
+  color: #5a63cc;
+}
+.blog .post .post-content .post-title h4:hover {
+  color: #5a63cc;
+}
+
+.contact .contact-boxes .contact-box p > i {
+  color: #5a63cc;
+}
+.contact .contact-boxes .contact-box p > i:not(.available):after {
+  border-left: 1px dotted #5a63cc;
+}
+.contact .contact-form .form-group .form-control:focus ~ label {
+  color: #5a63cc;
+}
+.contact .contact-form .form-group .input-border {
+  background-color: #5a63cc;
+}
+.contact .copyright a, .contact .copyright i {
+  color: #5a63cc;
+}
+
+.demo-rtl .about .about-me .about-info .personal-info .about-item h4 span:after {
+  border-left: none;
+  border-right: 1px dotted #5a63cc;
+}
+.demo-rtl .contact .contact-boxes .contact-box p > i:not(.available):after {
+  border-left: none;
+  border-right: 1px dotted #5a63cc;
+}
+
+.page-title .overlay .content ul li a {
+  color: #5a63cc;
+}
+
+.blog .post .post-content .more-details blockquote i {
+  color: #5a63cc;
+}
+.blog .post .post-content .post-footer .post-tags ul li a:hover {
+  color: #5a63cc;
+}
+.blog .post .post-content .post-comments .post-comment .reply-btn {
+  color: #5a63cc;
+}
+.blog .post .post-content .post-form .form-control:focus {
+  border: 1px solid #5a63cc;
+}
+.blog .blog-sidebar .sidebar-search .form-control:focus {
+  border: 1px solid #5a63cc;
+}
+.blog .blog-sidebar .sidebar-search .search-btn {
+  color: #5a63cc;
+}
+.blog .blog-sidebar .categories-list li a:hover {
+  color: #5a63cc;
+}
+.blog .blog-sidebar .categories-list li a span {
+  color: #5a63cc;
+}
+.blog .blog-sidebar .sidebar-posts .post-info h5 a:hover {
+  color: #5a63cc;
+}
+.blog .blog-sidebar .archives-list li a:hover {
+  color: #5a63cc;
+}
+.blog .blog-sidebar .tags-list li a:hover {
+  color: #5a63cc;
+}
+
+/*# sourceMappingURL=purble_color.css.map */

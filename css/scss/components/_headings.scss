@@ -1,0 +1,41 @@
+.main-title {
+	position: relative;
+    margin-bottom: 110px;
+	h2 {
+	    position: relative;
+        display: inline-block;
+        color: #dedddc;
+        font-weight: 600;
+        font-size: 26px;
+        line-height: 1;
+        letter-spacing: .7px;
+        text-transform: uppercase;
+		@media #{$extraSmall} {
+			font-size: 23px;
+        }
+		@media #{$smallMobile} {
+			font-size: 18px;
+        }
+    }
+	h3 {
+        color: $mainColor;
+        font-weight: 400;
+        letter-spacing: .5px;
+		font-size: 14px;
+        text-transform: uppercase;
+        display: inline-block;
+        padding: 12px 28px;
+        border-radius: 10px;
+        position: absolute;
+        top: 38px;
+        left: 50%;
+	    @include prefixer(transform, translateX(-50%));
+	    @include prefixer2(box-shadow, inset 3px 3px 3px #212225, inset -3px -3px 3px #3e3d3d);
+		@media #{$extraSmall} {
+			font-size: 13px;
+        }
+		@media #{$smallMobile} {
+			letter-spacing: 0;
+        }
+    }
+}

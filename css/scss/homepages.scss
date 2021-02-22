@@ -1,0 +1,33 @@
+/*-----------------------------------------------------------------
+Template Name  : Ayloul - Creative Portfolio Template 
+Author         : HasnaaDesign
+Version        : 1.0
+Primary Use    : Personal, Porfolio
+-----------------------------------------------------------------*/
+/*-----------------------------------------------------------------
+Table Of Contents
+--------------------------------
+ 1. Global Styles
+ 2. Loading
+ 3. Color Switcher
+ 4. Navbar
+ 5. Home
+ 6. About Me
+ 7. Services
+ 8. Skills
+ 9. Resume
+ 10. Portfolio
+ 11. Blog
+ 12. Contact
+-----------------------------------------------------------------*/
+
+
+@import 'helpers/variables';
+@import 'helpers/mixins';
+@import 'pages/globalpage';
+@import 'components/buttons';
+@import 'components/headings';
+@import 'components/loading';
+@import 'components/theme-options';
+@import 'layout/vertical-nav';
+@import 'pages/homepages';
